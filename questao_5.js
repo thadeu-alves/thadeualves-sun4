@@ -54,7 +54,7 @@ export default function landingPage() {
             </header>
 
             <section className="bg-[#171843] text-white py-20">
-                <div className="max-w-4xl mx-auto px-4 text-center flex flex-col gap-8 items-center justify-between md:flex-row-reverse">
+                <div className="max-w-6xl mx-auto px-4 text-center flex flex-col gap-8 items-center justify-between md:flex-row-reverse">
                     <div className="bg-white w-fit h-fit p-4 rounded-full">
                         <img
                             src="https://brandeps.com/icon-download/L/Lawyer-icon-01.png"
@@ -62,16 +62,16 @@ export default function landingPage() {
                             className="w-40 md:w-60"
                         />
                     </div>
-                    <div className="max-w-100 space-y-6">
-                        <h1 className="text-3xl font-semibold">
+                    <div className="max-w-150 space-y-6 lg:space-y-8">
+                        <h1 className="text-3xl font-semibold lg:text-5xl">
                             Transforme sua gestão processual
                             com automação inteligente
                         </h1>
-                        <p className="text-gray-300 font-light">
+                        <p className="text-gray-300 font-light lg:text-xl">
                             Acompanhe diversos de processos
                             sem esforço!
                         </p>
-                        <button className="bg-[#f09e4c] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#ce9f70] transition cursor-pointer">
+                        <button className="bg-[#f09e4c] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#f09e4cd2] transition cursor-pointer lg:text-xl">
                             Experimente grátis por 7 dias
                         </button>
                     </div>
@@ -271,6 +271,78 @@ export default function landingPage() {
                 </div>
             </section>
 
+            <section className="py-16">
+                <div className="container mx-auto px-4 md:px-0">
+                    <h2 className="text-[#171843] text-3xl font-bold text-center mb-12">
+                        Perguntas frequentes
+                    </h2>
+
+                    <hr className="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
+
+                    <div className="w-full space-y-4 md:px-6">
+                        <h1 className="text-xl font-medium leading-6 md:leading-4 text-[#171843]">
+                            O que o Jurídico SUN4 faz?
+                        </h1>
+                        <p className="text-base leading-6 text-gray-600 font-normal">
+                            O SUN4 é um software de
+                            automação jurídica que monitora,
+                            organiza e atualiza processos
+                            automaticamente. Ele envia
+                            alertas de prazos, movimentações
+                            e permite gerar relatórios
+                            estratégicos, tudo em uma única
+                            plataforma.
+                        </p>
+                    </div>
+
+                    <hr className="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
+
+                    <div className="w-full space-y-4 md:px-6">
+                        <h1 className="text-xl font-medium leading-6 md:leading-4 text-[#171843]">
+                            Qual a diferença entre o SUN4 e
+                            um sistema de gestão comum?
+                        </h1>
+                        <p className="text-base leading-6 text-gray-600 font-normal">
+                            Enquanto sistemas tradicionais
+                            só organizam dados, o SUN4
+                            integra-se diretamente com os
+                            tribunais, atualizando processos
+                            em tempo real e usando IA para
+                            priorizar alertas conforme seu
+                            perfil de atuação.
+                        </p>
+                    </div>
+
+                    <hr className="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
+
+                    <div className="w-full space-y-4 md:px-6">
+                        <h1 className="text-xl font-medium leading-6 md:leading-4 text-[#171843]">
+                            Quanto custa o SUN4?
+                        </h1>
+                        <p className="text-base leading-6 text-gray-600 font-normal">
+                            Temos planos a partir de R$
+                            99/mês (para 5.000 processos).
+                            Valores sob medida para
+                            escritórios maiores.
+                        </p>
+                    </div>
+
+                    <hr className="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
+
+                    <div className="w-full space-y-4 md:px-6">
+                        <h1 className="text-xl font-medium leading-6 md:leading-4 text-[#171843]">
+                            Posso testar antes de comprar?
+                        </h1>
+                        <p className="text-base leading-6 text-gray-600 font-normal">
+                            Sim! Oferecemos 7 dias grátis
+                            para explorar todas as
+                            funcionalidades. Sem cobrança e
+                            sem compromisso.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             <section className="py-16 bg-[#171843]">
                 <div className="container mx-auto px-4">
                     <h2 className="text-white text-3xl font-bold text-center mb-12">
@@ -404,7 +476,7 @@ export default function landingPage() {
                                     name="nome"
                                     value={formData.name}
                                     onChange={handleChange}
-                                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2"
+                                    className="w-full p-3 border border-gray-300 rounded-lg "
                                     required
                                 />
                             </div>
@@ -422,7 +494,7 @@ export default function landingPage() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2"
+                                    className="w-full p-3 border border-gray-300 rounded-lg "
                                     required
                                 />
                             </div>
@@ -440,7 +512,7 @@ export default function landingPage() {
                                     name="telefone"
                                     value={formData.phone}
                                     onChange={handleChange}
-                                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2"
+                                    className="w-full p-3 border border-gray-300 rounded-lg "
                                 />
                             </div>
 
@@ -456,7 +528,7 @@ export default function landingPage() {
                                     name="plano"
                                     value={formData.plan}
                                     onChange={handleChange}
-                                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2"
+                                    className="w-full p-3 border border-gray-300 rounded-lg "
                                 >
                                     <option value="plano1">
                                         Plano Básico (5.000
@@ -487,7 +559,7 @@ export default function landingPage() {
                                 value={formData.message}
                                 onChange={handleChange}
                                 rows="4"
-                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2"
+                                className="w-full p-3 border border-gray-300 rounded-lg "
                             ></textarea>
                         </div>
 
